@@ -1,0 +1,119 @@
+Canonical Order	Genre Label	conference	authors	title	year	DOI	last_cited_year
+1	Test Suite Improvement or Extension	ICSE	Ren, Zhilei, et al	Automated patching for unreproducible builds.	2022	10.1145/3510003.3510102	2025
+2	APR ML Tool	ICSE	Meng, Xiangxin, et al	Improving fault localization and program repair with deep semantic features and transferred knowledge.	2022	10.1145/3510003.3510147	2025
+3	APR ML Tool	ICSE	Ye, He, Matias Martinez, and Martin Monperrus	Neural program repair with execution-based backpropagation.	2022	10.1145/3510003.3510222	2025
+4	Non-ML APR Tool	ICSE	Gissurarson, Matthías Páll, et al	PropR: property-based automatic program repair.	2022	10.1145/3510003.3510620	2025
+5	Non-ML APR Tool	ICSE	Zhao, Yanjie, et al	Towards automatically repairing compatibility issues in published android apps.	2022	10.1145/3510003.3510128	2025
+6	Patch Correctness Assessment	ICSE	Noller, Yannic, et al	Trust enhancement issues in program repair.	2022	10.1145/3510003.3510040	2025
+7	APR ML Tool	ICSE	Jiang, Nan, Thibaud Lutellier, and Lin Tan	Cure: Code-aware neural machine translation for automatic program repair.	2021	10.1109/icse43902.2021.00107	2025
+8	APR ML Tool	ICSE	Li, Yi, Shaohua Wang, and Tien N	Dlfix: Context-based code transformation learning for automated program repair.	2020	10.1145/3377811.3380345	2025
+9	Meta-evaluation	ICSE	Liu, Kui, et al	On the efficiency of test suite based program repair: A systematic assessment of 16 automated repair systems for java programs.	2020	10.1145/3377811.3380338	2025
+10	Non-ML APR Tool	ICSE	Hong, Seongjoon, et al	SAVER: scalable, precise, and safe memory-error repair.	2020	10.1145/3377811.3380323	2024
+11	Patch Correctness Assessment	ICSE	Le, Xuan-Bach D	On reliability of patch correctness assessment.	2019	10.1109/icse.2019.00064	2025
+12	Test Suite Improvement or Extension	ICSE	Maoz, Shahar, Jan Oliver Ringert, and Rafi Shalom	Symbolic repairs for GR (1) specifications.	2019	10.1109/icse.2019.00106	2025
+13	non-ML APR Tool	ICSE	Ghorbani, Negar, Joshua Garcia, and Sam Malek	Detection and repair of architectural inconsistencies in java.	2019	10.1109/icse.2019.00067	2025
+14	APR ML Tool	ICSE	Saha, Seemanta	Harnessing evolution for multi-hunk program repair.	2019	10.1109/icse.2019.00020	2025
+15	ML Preprocessing	ICSE	Tomassi, David A	Bugswarm: Mining and continuously growing a dataset of reproducible failures and fixes.	2019	10.1109/icse.2019.00048	2025
+16	Non-ML APR Tool	ICSE	Xu, Xuezheng, et al	VFix: value-flow-guided precise program repair for null pointer dereferences.	2019	10.1109/icse.2019.00063	2025
+17	Non-ML APR Tool	ICSE	Wen, Ming, et al	Context-aware patch generation for better automated program repair.	2018	10.1145/3180155.3180233	2025
+18	Non-ML APR Tool	ICSE	Hua, Jinru, et al	Towards practical program repair with on-demand candidate generation.	2018	10.1145/3180155.3180245	2025
+19	Patch Correctness Assessment	ICSE	Yi, Jooyong, et al	A correlation study between automated program repair and test-suite metrics.	2018	10.1145/3180155.3182517	2024
+20	Meta-evaluation	ICSE	Motwani, Manish, et al	Do automated program repair techniques repair hard and important bugs?.	2018	10.1145/3180155.3182533	2024
+21	APR ML Tool	ICSE	Bhatia, Sahil, Pushmeet Kohli, and Rishabh Singh	Neuro-symbolic program corrector for introductory programming assignments.	2018	10.1145/3180155.3180219	2024
+22	Non-ML APR Tool	ICSE	Mechtaev, Sergey, et al	Semantic program repair using a reference implementation.	2018	10.1145/3180155.3180247	2024
+23	Non-ML APR Tool	ICSE	Mahajan, Sonai, et al	Automated repair of mobile friendly problems in web pages.	2018	10.1145/3180155.3180262	2025
+24	Non-ML APR Tool	ICSE	van Tonder, Rijnard, and Claire Le Goues	Static automated program repair for heap properties.	2018	10.1145/3180155.3180250	2025
+25	Patch Correctness Assessment	ICSE	Le, Xuan-Bach D	Overfitting in semantics-based automated program repair.	2018	10.1145/3180155.3182536	2025
+26	Patch Correctness Assessment	ICSE	Xiong, Yingfei, et al	Identifying patch correctness in test-based program repair.	2018	10.1145/3180155.3180182	2025
+27	Non-ML APR Tool	ICSE	Hassan, Foyzul, and Xiaoyin Wang	Hirebuild: An automatic approach to history-driven repair of build scripts.	2018	10.1145/3180155.3180181	2025
+28	Survey Paper	ICSE	Gazzola, Luca, Daniela Micucci, and Leonardo Mariani	Automatic software repair: A survey.	2018	10.1145/3180155.3182526	2025
+29	APR ML Tool	TSE	Chen, Zimin, Steve Kommrusch, and Martin Monperrus	Neural transfer learning for repairing security vulnerabilities in c code.	2022	10.1109/tse.2022.3147265	2025
+30	Survey Paper	TSE	Winter, Emily, et al	Let’s talk with developers, not about developers: A review of automatic program repair research.	2022	10.1109/tse.2022.3152089	2025
+31	Survey Paper	TSE	Winter, Emily, et al	How do developers really feel about bug fixing? Directions for automatic program repair.	2022	10.1109/tse.2022.3194188	2025
+32	Non-ML APR Tool	TSE	Chen, Liushan, et al	Program repair with repeated learning.	2022	10.1109/tse.2022.3164662	2025
+33	APR ML Tool	TSE	Chi, Jianlei, et al	Seqtrans: Automatic vulnerability fix via sequence to sequence learning.	2022	10.1109/tse.2022.3156637	2025
+34	APR ML Tool	TSE	Ahmed, Toufique, Noah Rose Ledesma, and Premkumar Devanbu	SYNSHINE: improved fixing of Syntax Errors.	2022	10.1109/tse.2022.3212635	2025
+35	Non-ML APR Tool	TSE	Motwani, Manish, et al	Quality of automated program repair on real-world defects.	2020	10.1109/tse.2020.2998785	2025
+36	Non-ML APR Tool	TSE	Xu, Tongtong, et al	Restore: Retrospective fault localization enhancing automated program repair.	2020	10.1109/tse.2020.2987862	2025
+37	Non-ML APR Tool	TSE	Wang, Yu, et al	Automatic Detection, Validation, and Repair of Race Conditions in Interrupt-Driven Embedded Software.	2020	10.1109/tse.2020.2989171	2024
+38	Meta-evaluation	TSE	Kechagia, Maria, et al	Evaluating automatic program repair capabilities to repair API misuses.	2021	10.1109/tse.2021.3067156	2025
+39	Non-ML APR Tool	TSE	Jin, Hai, et al	Aroc: An Automatic Repair Framework for On-chain Smart Contracts.	2021	10.1109/tse.2021.3123170	2025
+40	Non-ML APR Tool	TSE	Parasaram, Nikhil, Earl T	Trident: Controlling Side Effects in Automated Program Repair.	2021	10.1109/tse.2021.3124323	2025
+41	Patch Correctness Assessment	TSE	Ye, He, et al	Automated classification of overfitting patches with statically extracted code features.	2021	10.1109/tse.2021.3071750	2025
+42	Fault Localization	TSE	Chakraborty, Saikat, et al	Deep learning based vulnerability detection: Are we there yet.	2021	10.1109/tse.2021.3087402	2025
+43	Fault Localization	TSE	Dam, Hoa Khanh, et al	Automatic feature learning for predicting vulnerable software components.	2018	10.1109/tse.2018.2881961	2025
+44	APR ML Tool	TSE	Chen, Zimin, et al	Sequencer: Sequence-to-sequence learning for end-to-end program repair.	2019	10.1109/tse.2019.2940179	2025
+45	Non-ML APR Tool	TSE	Liva, Giovanni, et al	Automatic repair of timestamp comparisons.	2019	10.1109/tse.2019.2948351	2024
+46	Non-ML APR Tool	TSE	Chen, Liushan, Yu Pei, and Carlo A	Contract-based program repair without the contracts: An extended study.	2020	10.1109/tse.2020.2970009	2025
+47	Developer Efficiency Aid	TSE	Gavidia-Calderon, Carlos, et al	The assessor's dilemma: Improving bug repair via empirical game theory.	2019	10.1109/tse.2019.2944608	2025
+48	Non-ML APR Tool	TSE	Afzal, Afsoon, et al	SOSRepair: Expressive semantic search for real-world program repair.	2019	10.1109/tse.2019.2944914	2025
+49	Non-ML APR Tool	TSE	Muntean, Paul, et al	Intrepair: Informed repairing of integer overflows.	2019	10.1109/tse.2019.2946148	2024
+50	Fault Localization	TSE	Liu, Kui, et al	Mining fix patterns for findbugs violations.	2018	10.1109/tse.2018.2884955	2025
+51	Survey Paper	TSE	Gazzola, Luca, Daniela Micucci, and Leonardo Mariani	Automatic Software Repair: A Survey,	2017	10.1109/tse.2017.2755013	2025
+52	APR ML Tool	FSE	Xia, Chunqiu Steven, and Lingming Zhang	Less training, more repairing please: revisiting automated program repair via zero-shot learning.	2022	10.1145/3540250.3549101	2025
+53	Non-ML APR Tool	FSE	Oh, Wonseok, and Hakjoo Oh	PyTER: effective program repair for Python type errors.	2022	10.1145/3540250.3549130	2024
+54	Patch Correctness Assessment	FSE	Kim, Seulbae, and Taesoo Kim	RoboFuzz: fuzzing robotic systems over robot operating system (ROS) for finding correctness bugs.	2022	10.1145/3540250.3549164	2025
+55	APR ML Tool	FSE	Fu, Michael, et al	VulRepair: a T5-based automated software vulnerability repair.	2022	10.1145/3540250.3549098	2025
+56	Test Suite Improvement or Extension	FSE	Dutta, Saikat, August Shi, and Sasa Misailovic	Flex: fixing flaky tests in machine learning projects by updating assertion bounds.	2021	10.1145/3468264.3468615	2025
+57	Non-ML APR Tool	FSE	Wong, Chu-Pan, et al	VarFix: balancing edit expressiveness and search effectiveness in automated program repair.	2021	10.1145/3468264.3468600	2025
+58	APR ML Tool	FSE	Yang, Chen	Accelerating redundancy-based program repair via code representation learning and adaptive patch filtering.	2021	10.1145/3468264.3473496	2025
+59	Non-ML APR Tool	FSE	Song, Dowon, Woosuk Lee, and Hakjoo Oh	Context-aware and data-driven feedback generation for programming assignments.	2021	10.1145/3468264.3468598	2024
+60	APR ML Tool	FSE	Zhu, Qihao, et al	A syntax-guided edit decoder for neural program repair.	2021	10.1145/3468264.3468544	2025
+61	APR ML Tool	FSE	Xiao, Ya	Multi-location cryptographic code repair with neural-network-based methodologies.	2021	10.1145/3468264.3473102	NOT_CITED
+62	Non-ML APR Tool	FSE	Koyuncu, Anil, et al	iFixR: Bug report driven program repair.	2019	10.1145/3338906.3338935	2023
+63	Non-ML APR Tool	FSE	Bavishi, Rohan, Hiroaki Yoshida, and Mukul R	Phoenix: Automated data-driven synthesis of repairs for static analysis violations.	2019	10.1145/3338906.3338952	2024
+64	Non-ML APR Tool	FSE	Ginelli, Davide	Failure-driven program repair.	2019	10.1145/3338906.3341464	NOT_CITED
+65	Non-ML APR Tool	FSE	Hua, Jinru, et al	Sketchfix: a tool for automated program repair approach using lazy candidate generation.	2018	10.1145/3236024.3264600	2025
+66	Non-ML APR Tool	FSE	Yang, Junwen, et al	Powerstation: Automatically detecting and fixing inefficiencies of database-backed web applications in ide.	2018	10.1145/3236024.3264589	2024
+67	Fault Localization	ASE	Dissanayake, Nesara, et al	An Empirical Study of Automation in Software Security Patch Management.	2022	10.1145/3551349.3556969	2024
+68	Nonfunctional Improvement	ASE	Zhang, Chen, et al	BuildSonic: Detecting and Repairing Performance-Related Configuration Smells for Continuous Integration Builds.	2022	10.1145/3551349.3556923	2025
+69	Patch Correctness Assessment	ASE	Tian, Haoye, et al	Is this Change the Answer to that Problem? Correlating Descriptions of Bug and Code Changes for Evaluating Patch Correctness.	2022	10.1145/3551349.3556914	2025
+70	APR ML Tool	ASE	Ye, He, et al	SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics.	2022	10.1145/3551349.3556926	2025
+71	Meta-evaluation	ASE	Zhong, Wenkang, et al	StandUp4NPR: Standardizing SetUp for Empirically Comparing Neural Program Repair Systems.	2022	10.1145/3551349.3556943	2025
+72	Non-ML APR Tool	ASE	Yang, Deheng, et al	TransplantFix: Graph Differencing-based Code Transplantation for Automated Program Repair.	2022	10.1145/3551349.3556893	2025
+73	APR ML Tool	ASE	Li, Xueyang, et al	TransRepair: Context-aware Program Repair for Compilation Errors.	2022	10.1145/3551349.3560422	2024
+74	Nonfunctional Improvement	ASE	Alotaibi, Ali S	Automated repair of size-based inaccessibility issues in mobile applications.	2021	10.1109/ase51524.2021.9678625	2025
+75	Patch Correctness Assessment	ASE	Wang, Shangwen, et al	Automated patch correctness assessment: How far are we?.	2020	10.1145/3324884.3416590	2025
+76	Patch Correctness Assessment	ASE	Tian, Haoye, et al	Evaluating representation learning of code changes for predicting patch correctness in program repair.	2020	10.1145/3324884.3416532	2025
+77	Non-ML APR Tool	ASE	Benton, Samuel, et al	On the effectiveness of unified debugging: An extensive study on 16 program repair systems.	2020	10.1145/3324884.3416566	2025
+78	APR ML Tool	ASE	Ding, Yangruibo, et al	Patching as translation: the data and the metaphor.	2020	10.1145/3324884.3416587	2024
+79	Non-ML APR Tool	ASE	Hu, Yang, et al	Re-factoring based program repair applied to programming assignments.	2019	10.1109/ase.2019.00044	2025
+80	Non-ML APR Tool	ASE	Endres, Madeline, et al	Infix: Automatically repairing novice program inputs.	2019	10.1109/ase.2019.00045	2023
+81	Developer Efficiency Aid	ASE	Cashin, Padraic, et al	Understanding automatically-generated patches through symbolic invariant differences.	2019	10.1109/ase.2019.00046	2025
+82	Non-ML APR Tool	ASE	Ghanbari, Ali, and Lingming Zhang	PraPR: Practical program repair via bytecode mutation.	2019	10.1109/ase.2019.00116	2025
+83	Patch Correctness Assessment	ASE	Soto, Mauricio	Improving patch quality by enhancing key components of automatic program repair.	2019	10.1109/ase.2019.00147	2025
+84	Non-ML APR Tool	ASE	Sharma, Vaibhav	Automatically repairing binary programs using adapter synthesis.	2019	10.1109/ase.2019.00149	NOT_CITED
+85	Non-ML APR Tool	ASE	Ghanbari, Ali	Toward practical automatic program repair.	2019	10.1109/ase.2019.00156	2023
+86	Non-ML APR Tool	ASE	Lin, Huarui, et al	Pfix: fixing concurrency bugs based on memory access patterns.	2018	10.1145/3238147.3238198	2023
+87	ML Preprocessing	EMSE	Namavar, Marjane, Noor Nashid, and Ali Mesbah	A controlled experiment of different code representations for learning-based program repair.	2022	10.1007/s10664-022-10223-5	NOT_CITED
+88	Meta-evaluation	EMSE	Ginelli, Davide, et al	A comprehensive study of code-removal patches in automated program repair.	2022	10.1007/s10664-021-10100-7	NOT_CITED
+89	Fault Localization	EMSE	Luo, Linghui, et al	TaintBench: Automatic real-world malware benchmarking of Android taint analyses.	2022	10.1007/s10664-021-10013-5	NOT_CITED
+90	Fault Localization	EMSE	Yang, Deheng, et al	Where were the repair ingredients for Defects4j bugs? Exploring the impact of repair ingredient retrieval on the performance of 24 program repair systems.	2021	10.1007/s10664-021-10003-7	NOT_CITED
+91	Meta-evaluation	EMSE	Aleti, Aldeida, and Matias Martinez	E-APR: mapping the effectiveness of automated program repair techniques.	2021	10.1007/s10664-021-09989-x	NOT_CITED
+92	Patch Correctness Assessment	EMSE	Ye, He, Matias Martinez, and Martin Monperrus	Automated patch assessment for program repair at scale.	2021	10.1007/s10664-020-09920-w	NOT_CITED
+93	Non-ML APR Tool	EMSE	Koyuncu, Anil, et al	Fixminer: Mining relevant fix patterns for automated program repair.	2020	10.1007/s10664-019-09780-z	NOT_CITED
+94	Non-ML APR Tool	EMSE	Kim, Jindae, and Sunghun Kim	Automatic patch generation with context-based change application.	2019	10.1007/s10664-019-09742-5	NOT_CITED
+95	Non-ML APR Tool	EMSE	Yu, Zhongxing, et al	Alleviating patch overfitting with automatic test generation: a study of feasibility and effectiveness for the Nopol repair system.	2019	10.1007/s10664-018-9619-4	NOT_CITED
+96	Meta-evaluation	EMSE	Motwani, Manish, et al	Do automated program repair techniques repair hard and important bugs?.	2018	10.1145/3180155.3182533	2024
+97	Patch Correctness Assessment	EMSE	Yi, Jooyong, et al	A correlation study between automated program repair and test-suite metrics.	2018	10.1145/3180155.3182517	2024
+98	Non-ML APR Tool	EMSE	Oliveira, Vinicius Paulo L	Improved representation and genetic operators for linear genetic programming for automated program repair.	2018	10.1007/s10664-017-9562-9	NOT_CITED
+99	Patch Correctness Assessment	EMSE	Le, Xuan-Bach D	Overfitting in semantics-based automated program repair.	2018	10.1145/3180155.3182536	2025
+100	Non-ML APR Tool	EMSE	Yu, Tingting, and Michael Pradel	Pinpointing and repairing performance bottlenecks in concurrent programs.	2018	10.1007/s10664-017-9578-1	NOT_CITED
+101	APR ML Tool	ICSE	Xia, Chunqiu Steven, Yuxiang Wei, and Lingming Zhang	Automated program repair in the era of large pre-trained language models.	2023	10.1109/icse48619.2023.00129	2025
+102	ML Preprocessing	ICSE	Fan, Zhiyu, et al	Automated repair of programs from large language models.	2023	10.1109/icse48619.2023.00128	2025
+103	APR ML Tool	ICSE	Meng, Xiangxin, et al	Template-based Neural Program Repair.	2023	10.1109/icse48619.2023.00127	2025
+104	APR ML Tool	ICSE	Zhu, Qihao, et al	Tare: Type-Aware Neural Program Repair.	2023	10.1109/icse48619.2023.00126	2025
+105	ML Preprocessing	ICSE	Jiang, Nan, et al	Impact of code language models on automated program repair.	2023	10.1109/icse48619.2023.00125	2025
+106	ML Preprocessing	ICSE	Li, Zongjie, et al	Cctest: Testing and repairing code completion systems.	2023	10.1109/icse48619.2023.00110	2025
+107	Fault Localization	ICSE	Motwani, Manish, and Yuriy Brun	Better automatic program repair by using bug reports and tests together.	2023	10.1109/icse48619.2023.00109	2024
+108	APR ML Tool	ICSE	Jiang, Nan, et al	Knod: Domain knowledge distilled tree decoder for automated program repair.	2023	10.1109/icse48619.2023.00111	2025
+109	APR ML Tool	ICSE	Parasaram, Nikhil, Earl T	Rete: Learning Namespace Representation for Program Repair.	2023	10.1109/icse48619.2023.00112	2025
+110	Nonfunctional Improvement	TSE	Banerjee, Chong, Ballabriga, and Roychoudhury	EnergyPatch: Repairing Resource Leaks to Improve Energy-Efficiency of Android Apps	2018	10.1109/tse.2017.2689012	2024
+111	Fault Localization	TSE	Barbosa, Eiji Adachi, and Alessandro Garcia	Global-aware recommendations for repairing violations in exception handling.	2018	10.1145/3180155.3182539	2024
+112	Fault Localization	TSE	Habayeb, Mayy, et al	On the use of hidden markov model to predict the time to fix bugs.	2017	10.1109/tse.2017.2757480	2024
+113	Fault Localization	TSE	Di Nucci, Dario, et al	A developer centered bug prediction model.	2017	10.1109/tse.2017.2659747	2025
+114	Test Suite Improvement or Extension	TSE	Wang, Zhe, et al	Using local clocks to reproduce concurrency bugs.	2017	10.1109/tse.2017.2752158	2020
+115	Non-ML APR Tool	TSE	Santiesteban, Priscila, et al	CirFix: Automated Hardware Repair and Its Real-World Applications.	2023	10.1109/tse.2023.3269899	2025
+116	Developer Efficiency Aid	TSE	Li, Leping, et al	Generating Concise Patches for Newly Released Programming Assignments.	2022	10.1109/tse.2022.3153522	2025
+117	Patch Correctness Assessment	TSE	Le-Cong, Thanh, et al	Invalidator: Automated patch correctness assessment via semantic and syntactic reasoning.	2023	10.1109/tse.2023.3255177	2025
+118	Fault Localization	TSE	Nguyen, Truong Giang, et al	Multi-Granularity Detector for Vulnerability Fixes.	2023	10.1109/tse.2023.3281275	2024
