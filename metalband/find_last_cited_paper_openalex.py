@@ -60,11 +60,15 @@ def get_openalex_citation_years(doi, cache):
         # Use pyalex to find works that cite the given DOI.
         # The .get() method returns an iterator that handles all pagination.
         id = pyalex.Works()[f"https://doi.org/{doi}"]["id"]
+        print("ID IS:", id)
         citing_works_iterator = (
                 pyalex.Works().filter(cites=id).get(per_page=200)
         )
 
+        ignore_title = "The Living Review on Automated Program Repair"
+        count = 0
         for work in citing_works_iterator:
+
             if work.get("publication_year"):
                 citation_years.append(work["publication_year"])
 
@@ -153,6 +157,73 @@ def build_citation_database(dblp_xml_path):
     print("\nFinished Phase 1. DBLP database built.")
     return doi_to_key_map, title_to_key_map, citations_map
 
+def calculate_death_year(year_threshold, citation_threshold, citation_years, birth_year):
+    "Uses a sliding window to check if a citation threshold is met over every set of year_thresholds."
+    
+    #create a list of citations per year before calculation
+    citation_years = sorted(citation_years)
+    final_citation = max(citation_years)
+    citations_per_year = [0] * (final_citation - birth_year + 1)
+    #print(citations_per_year)
+    
+    for citation in citation_years:
+        #print("CITATION:", citation, "BIRTH_YEAR:", birth_year, end=" || ")
+        #print(citation - birth_year)
+        year = citation - birth_year
+        if year < 0:
+            year = 0
+        citations_per_year[year] += 1
+    #print(citations_per_year)
+
+    for i in range(year_threshold):
+        citations_per_year.append(0)
+
+    #build initial sliding window
+    citation_count = 0
+    for i in range(year_threshold):
+        citation_count += citations_per_year[i]
+    
+    if citation_count < citation_threshold:
+       
+        return birth_year
+    
+    #move sliding window through rest of list
+    for i in range(year_threshold, len(citations_per_year)):
+        citation_count -= citations_per_year[i - year_threshold]
+        citation_count += citations_per_year[i]
+        if citation_count < citation_threshold:
+            return birth_year + i
+    
+    return birth_year + len(citations_per_year)
+    
+"""
+OUTDATED CALCULATE DEATH6
+
+#REWORK - This isn't quite the defined threshold. Implmenet a sliding window to do the calculations.
+def calculate_death_year(year_threshold, citation_threshold, citation_years, birth_year):
+    #Goes through list of cited years and returns the death year based on threshold definition
+    citation_years = sorted(citation_years)
+    final_year = citation_years[-1]
+    
+    citation_count = 0
+    year_count = 0
+    for year in range(birth_year, final_year):
+        while (citation_years[0]) == year:
+            citation_count += 1
+            citation_years.pop(0)
+        year_count += 1
+        if citation_count >= citation_threshold:
+            citation_count = 0
+            year_count = 0
+        if year_count >= year_threshold:
+            if citation_count < citation_threshold:
+                return year - (year_count - 1)
+            else:
+                year_count = 0
+                citation_count = 0
+    return final_year #this kills all papers on the final year they are cited. Works fine for papers who die on last citation, terribly for papers makikng it to 2025
+
+"""
 
 # --- Main Processing Logic ---
 def process_papers(args):
@@ -160,6 +231,7 @@ def process_papers(args):
 
     # --- Step 1: Configure APIs and Load data sources ---
     pyalex.config.email = args.email  # Configure pyalex with your email
+    pyalex.config.api_key = "hVyPpgPKaOnAAKMpRGZVNI"
     api_cache = load_api_cache()
 
     doi_map, title_map, dblp_citations = {}, {}, defaultdict(list)
@@ -183,6 +255,7 @@ def process_papers(args):
 
         doi_idx = header.index("DOI")
         title_idx = header.index("title")
+        birth_idx = header.index("year")
 
         output_rows = []
         for row in tqdm(rows, desc="Processing papers"):
@@ -204,11 +277,13 @@ def process_papers(args):
                 all_citation_years.extend(openalex_years)
 
             if all_citation_years:
-                last_cited_year = max(all_citation_years)
+                last_cited_year = calculate_death_year(args.years, args.citations, all_citation_years, int(row[birth_idx]))
+                #last_cited_year = max(all_citation_years) #last cited definition, currently using the threshold definition
             else:
-                last_cited_year = "NOT_CITED"
+                last_cited_year = int(row[birth_idx])
+                #last_cited_year = "NOT_CITED" #We will be killing papers year they are born instead if no citations are found.
 
-            output_rows.append(row + [str(last_cited_year)])
+            output_rows.append(row + [str(min(last_cited_year, 2023))])
 
         # Write output file
         with open(args.output_tsv, "w", encoding="utf-8", newline="") as outfile:
@@ -257,6 +332,20 @@ def main():
     )
     parser.add_argument(
         "--no-openalex", action="store_true", help="Do not use the OpenAlex API."
+    )
+    parser.add_argument(
+        "-years",
+        "--years",
+        type=int,
+        default=3,
+        help="The number of years a paper can go wihtout meeting citation requirements before dying"
+    )
+    parser.add_argument(
+        "-cites",
+        "--citations",
+        type=int,
+        default=5,
+        help="The number of citations needed to be considered alive"
     )
 
     args = parser.parse_args()

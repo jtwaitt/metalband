@@ -42,15 +42,19 @@ def find_doi_openalex(title, authors, year=None, conference=None):
     Searches for a DOI using the OpenAlex API.
     """
     base_url = "https://api.openalex.org/works"
+    title = title.replace(",", "")
     search_query = (
-        f"title.search:{title} AND author.search:{authors.split(',')[0].split()[-1]}"
+        f"title.search:{title}" #,author.search:{authors.split(',')[0].split()[-1]}" #TODO: Fix author Search 
     )
-    params = {"search": search_query, "per_page": 1}
+    params = {"filter": search_query, "per_page": 1}
     if year:
-        params["filter"] = f"publication_year:{year}"
+        low = str(int(year) - 2)
+        high = str(int(year) + 2)
+        years = low + " -  " + high
+        params["filter"] = params["filter"] +  "," + f"publication_year:{years}"
 
     headers = {"User-Agent": "DOI Pyscript/1.0"}
-
+    
     try:
         response = requests.get(base_url, params=params, headers=headers, timeout=10)
         response.raise_for_status()
@@ -59,6 +63,7 @@ def find_doi_openalex(title, authors, year=None, conference=None):
             item = data["results"][0]
             if item.get("doi"):
                 return item["doi"].replace("https://doi.org/", "")
+        print("  OpenAlex did not return")
         return None
     except requests.exceptions.RequestException as e:
         print(f"  OpenAlex API request error: {e}")
@@ -117,6 +122,12 @@ def process_tsv_file(filepath, output_filepath=None):
                         print("  Not found in CrossRef. Trying OpenAlex...")
                         doi = find_doi_openalex(title, authors, year, conference)
                         time.sleep(0.5)
+
+                    if not doi:
+                        print("  Trying alternate OpenAlex title... ")
+                        alt_title = title.replace("-", "")
+                        doi = find_doi_openalex(alt_title, authors, year, conference)
+                        time.sleep(0.2)
 
                     doi_found = doi if doi else "NOT_FOUND"
                     current_result = [conference, authors, title, year, doi_found]
