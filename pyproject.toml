@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "lxml>=5.4.0",
+    "matplotlib>=3.10.6",
     "pyalex>=0.18",
     "requests>=2.32.3",
     "tqdm>=4.67.1",
